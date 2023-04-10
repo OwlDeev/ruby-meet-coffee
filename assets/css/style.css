@@ -93,6 +93,62 @@ h3 {
   font-weight: bold; /* Aumenta el peso de la fuente */
 }
 
+.hero-section-main {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+
+.hero-section-main img {
+  width: 100%; /* Ajusta el ancho de la imagen al ancho del div */
+  height: 100%; /* Ajusta la altura de la imagen a la altura del div */
+  object-fit: cover; /* Ajusta la imagen para que se adapte al contenedor manteniendo sus proporciones y cubriendo todo el espacio */
+}
+
+.hero-section-main h1 {
+  color: #373b6f;
+  font-size: 40px;
+  position: absolute; /* Establece el posicionamiento absoluto para el elemento h2 */
+  top: 40%; /* Posiciona el h2 en el centro vertical de la imagen */
+  left: 70%; /* Posiciona el h2 en el centro horizontal de la imagen */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Centra el h2 respecto a sus propias dimensiones */
+
+  text-shadow: 0px 0px 3px #373b6f; /* Aplica el borde difuminado */
+}
+
+.hero-section-main a {
+    color: #373b6f;
+    font-size: 40px;
+    position: absolute; /* Establece el posicionamiento absoluto para el elemento h2 */
+    top: 80%; /* Posiciona el h2 en el centro vertical de la imagen */
+    left: 67%; /* Posiciona el h2 en el centro horizontal de la imagen */
+    transform: translate(
+      -50%,
+      -50%
+    ); /* Centra el h2 respecto a sus propias dimensiones */
+  
+    text-shadow: 0px 0px 3px #373b6f; /* Aplica el borde difuminado */
+  }
+
+  .hero-section-main i {
+    color: #373b6f;
+    font-size: 40px;
+    position: absolute; /* Establece el posicionamiento absoluto para el elemento h2 */
+    top: 50%; /* Posiciona el h2 en el centro vertical de la imagen */
+    left: 100%; /* Posiciona el h2 en el centro horizontal de la imagen */
+    transform: translate(
+      -50%,
+      -50%
+    ); /* Centra el h2 respecto a sus propias dimensiones */
+  
+    text-shadow: 0px 0px 3px #373b6f; /* Aplica el borde difuminado */
+  }
+
 .hero-section {
   width: 100%;
   height: 400px !important;
@@ -150,96 +206,103 @@ h3 {
 }
 
 .div-quienes-somos h1 {
+  color: #373b6f;
+}
+
+#nuestros-productos {
+  width: 100%;
+  height: 600px;
+  background-image: url("../img/fondo_2_1.jpg");
+  background-size: cover; /* Ajusta la imagen de fondo para que cubra todo el espacio del div manteniendo sus proporciones */
+  background-position: bottom; /* Centra la imagen de fondo en el div */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #373b6f;
+}
+
+.div-productos-main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 40px;
+}
+
+.div-producto {
+  width: 100%;
+  height: 60%;
+  margin: 20px 20px 0px 20px;
+}
+
+.div-productos-titulo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.img-producto {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.div-title-producto {
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.div-title-producto h3 {
+  margin-top: 0;
+  text-shadow: 0px 0px 2px #373b6f; /* Aplica el borde difuminado */
+}
+
+#contactanos {
+  width: 100%;
+  height: 500px;
+  background-image: url("../img/fondo_3.jpg");
+  background-size: cover; /* Ajusta la imagen de fondo para que cubra todo el espacio del div manteniendo sus proporciones */
+  background-position: bottom; /* Centra la imagen de fondo en el div */
+}
+
+#contactanos h1 {
+  margin-top: 0;
+  color: #373b6f;
+}
+
+#contactanos h4 {
+  color: #373b6f;
+}
+
+.div-contactanos-section {
+  width: 100%;
+  height: 100%;
+}
+
+.div-contactanos-main {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+
+.input-contactanos {
+  width: 80%;
+}
+
+.div-title-contactanos {
+  padding: 20px;
+}
+
+#icon-volver-home{
     color: #373b6f;
-  }
-  
-  #nuestros-productos{
-    width: 100%;
-    height: 600px;
-    background-image: url('../img/fondo_2_1.jpg');
-    background-size: cover; /* Ajusta la imagen de fondo para que cubra todo el espacio del div manteniendo sus proporciones */
-    background-position: bottom; /* Centra la imagen de fondo en el div */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: #373b6f;
-  }
+}
 
-  .div-productos-main{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 40px;
-  }
-
-  .div-producto{
-    width: 100%;
-    height: 60%;
-    margin: 20px 20px 0px 20px;
-    
-  }
-
-  .div-productos-titulo{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-  }
-
-  .img-producto{
-    width: 100%;
-    height: 100%;
-    border-radius: 20px 20px 0px 0px;
-  }
-
-  .div-title-producto{
-    background-color: white;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0px 0px 20px 20px;
-  }
-
-  .div-title-producto h3{
-    margin-top: 0;
-    text-shadow: 0px 0px 2px #373b6f; /* Aplica el borde difuminado */
-  }
-
-  #contactanos{
-    width: 100%;
-    height: 500px;
-    background-image: url('../img/fondo_3.jpg');
-    background-size: cover; /* Ajusta la imagen de fondo para que cubra todo el espacio del div manteniendo sus proporciones */
-    background-position: bottom; /* Centra la imagen de fondo en el div */
-  }
-
-  #contactanos h1{
-    margin-top: 0;
-    color: #373b6f;
-  }
-
-  #contactanos h4{
-    color: #373b6f;
-  }
-
-  .div-contactanos-section{
-    width: 100%;
-    height: 100%;
-  }
-
-  .div-contactanos-main{
-    display: flex;
-    flex-direction: row;
-    padding: 20px;
-  }
-
-  .input-contactanos{
-    width: 80%;
-  }
-
-  .div-title-contactanos{
-    padding: 20px;
-  }
+.a-comprar{
+    color: red;
+}
